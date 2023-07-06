@@ -5,7 +5,7 @@ function Note(props) {
 
   async function deleteNote(){
     console.log({id:props.id})
-    await fetch("https://keynotes-api.onrender.com/notes/"+ props.id,{
+    await fetch("https://keynotes-api.onrender.com/notes"+props.id,{
       method: "delete",
     })
     .catch((err) => {

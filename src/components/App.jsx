@@ -14,7 +14,7 @@ function App() {
       console.log(data);
       data.forEach(note => {
         setNotes(prevNotes => {
-          return [...prevNotes,{title: note.title,content:note.content,id:note._id}];
+          return [...prevNotes,{title: note.title,content:note.content,id:note.number}];
         })
       });
     })

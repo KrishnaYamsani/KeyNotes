@@ -35,7 +35,8 @@ function CreateArea(props) {
     content:note.content,
     number:uuidv4()
     };
-    
+    // https://keynotes-api.onrender.com/notes
+    // http://localhost:5000/notes
     await fetch("https://keynotes-api.onrender.com/notes",{
       method: "post",
        body: JSON.stringify(Note),
